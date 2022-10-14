@@ -21,7 +21,7 @@ img{
 header{
   position: fixed;
   width: 100%;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   padding: 20px;
   display: flex;
   align-items: center;
@@ -62,7 +62,8 @@ header ul li{
   background-position: center 100px;
   top: 0;
   top:90%;
-  transition: 2s all;
+
+  transition: 1s all;
 }
 
 #back.anime{
@@ -84,15 +85,16 @@ header ul li{
 
 #car{
   position: absolute;
+  top: 150px; 
   bottom:100px;
   max-width: 40%;
-  left: -250px;
-  width: 200px;
+  left: -550px;
+  width: 380px;
   transition: 0.6s all;
 }
 
 #car.anime{
-  left: 0px;
+  left: 70px;
 }
 
 #food{
@@ -127,3 +129,11 @@ header ul li{
   justify-content: center;
   top: 0;
 }
+
+h2{
+  text-align: center;
+
+  margin-top: 10%;
+  font-size:100%;
+  color: #ff0000;
+  }

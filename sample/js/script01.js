@@ -16,7 +16,7 @@ $(function(){
   function contentAnime(){
     setTimeout(backAnime,300);//0.3秒後backAnime実行
     setTimeout(personAnime,2000);//2秒後personAnime実行
-    setTimeout(carAnime,2000);//2秒後carAnime実行
+    setTimeout(carAnime,800);//2秒後carAnime実行
     setTimeout(foodAnime,3000);//3秒後foodAnime実行
   }
   

@@ -58,7 +58,7 @@ header ul li{
 
 #back{
   background-image: url(../images/IMG_0041.PNG);
-  background-size: cover;
+  background-size: cover;height: 100%;
   background-position: center 100px;
   top: 0;
   top:90%;

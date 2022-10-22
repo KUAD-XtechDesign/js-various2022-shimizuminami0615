@@ -31,6 +31,20 @@ body{
 
 body.appear{
     background:#fff;/*画面を開いた後の背景色を指定*/
+    background-image: url(../images/IMG_0041のコピー.PNG);
+   background-size: cover;
+    background-attachment: fixed;
+    
+    
+
+  background-repeat: no-repeat;
+ 
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+
 }
 
 .splashbg{
@@ -93,7 +107,7 @@ body.appear #container{
 /*========= レイアウトのためのCSS ===============*/
 
 h1{
-  font-size:7rem;
+  font-size:7px;
 }
 
 h2{
@@ -116,7 +130,7 @@ small{
   background:#333;
   color:#fff;
   text-align: center;
-  padding: 20px;
+  padding: 2px;
 }
 
 section{

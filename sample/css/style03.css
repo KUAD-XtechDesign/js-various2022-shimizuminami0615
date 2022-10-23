@@ -33,11 +33,14 @@ body.appear{
     background:rgb(53, 53, 53);/*画面を開いた後の背景色を指定*/
     background-image: url(../images/haikei.PNG);
    background-size: cover;
+  
     background-attachment: fixed;
+  
     
     
 
   background-repeat: no-repeat;
+
 
 }
 
@@ -132,7 +135,7 @@ section{
 }
 
 section:nth-child(2n){
-  background:rgba(53, 53, 53,0.75); 
+  background:rgba(0, 0, 0, 0.75); 
 
   
 }

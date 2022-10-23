@@ -132,7 +132,8 @@ section{
 }
 
 section:nth-child(2n){
-  background:#f3f3f3; 
+  background:#383838; 
+  opacity: 0.8;
 }
 
 #footer{

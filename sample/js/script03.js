@@ -14,19 +14,6 @@ $(window).on('load',function(){
     $('.splashbg').on('animationend', function() { 
         //この中に動かしたいJSを記載
     });
-    $(window).scroll(function () {
-      var scrollAnimationElm = document.querySelectorAll('.scroll_up');
-      var scrollAnimationFunc = function () {
-        for (var i = 0; i < scrollAnimationElm.length; i++) {
-          var triggerMargin = 100;
-          if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
-            scrollAnimationElm[i].classList.add('on');
-          }
-        }
-      }
-      window.addEventListener('load', scrollAnimationFunc);
-      window.addEventListener('scroll', scrollAnimationFunc);
-    });
     //=====ここまで背景が伸びた後に動かしたいJSをまとめる
         
 });

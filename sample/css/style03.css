@@ -31,7 +31,7 @@ body{
 
 body.appear{
     background:rgb(53, 53, 53);/*画面を開いた後の背景色を指定*/
-    background-image: url();
+    background-image: url(../images/haikei.PNG);
    background-size: cover;
     background-attachment: fixed;
     

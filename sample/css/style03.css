@@ -129,11 +129,14 @@ small{
   
 
   padding: 53px 0px 5px 140px;
+  width: 400px;
 
 }
 
 section{
   padding:100px 30px;
+  
+  
 }
 
 section:nth-child(2n){
@@ -243,6 +246,7 @@ p{
   margin:30px 0;
   word-wrap : break-word;
 }
+
 
 
 

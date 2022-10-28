@@ -38,5 +38,13 @@ $('.gallery').slick({
     $(".choice-btn .slick-slide").removeClass("slick-current").eq(index).addClass("slick-current");
   });
     //=====ここまで背景が伸びた後に動かしたいJSをまとめる
-        
+    $(function(){
+      $(".inview_re").on("inview", function (event, isInView) {
+        if (isInView) {
+          $(this).stop().addClass("is-show");
+        } else {
+          $(this).stop().removeClass("is-show");
+        }
+      });
+    });    
 });

@@ -106,7 +106,7 @@ body.appear #container{
 /*========= レイアウトのためのCSS ===============*/
 
 h1{
-  font-size:30px;
+  font-size:20px;
   color: rgb(210, 145, 33);
   background-color: rgb(46, 46, 46);
   border-top: solid 1px rgb(210, 145, 33);
@@ -170,7 +170,7 @@ img{
 /*メイン画像下に余白をつける*/
 
 .gallery{
-  margin:0 0 5px 0;
+  margin:0 0 0px 0;
   width: 72%;
 }
 

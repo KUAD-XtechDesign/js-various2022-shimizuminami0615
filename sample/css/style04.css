@@ -1,33 +1,157 @@
-body{
-  background-color: #000;
-  color: #ccc;
+/*===========
+inview
+===========*/
+
+.fadeIn_right {
+  opacity: 0;
+  transform: translate(50%, 0);
+  transition: 2s;
+}
+.fadeIn_right.is-show {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
-header{
-  background-color: #fff;
-  padding: 10px;
-  color: #333;
-}
+/*===========
+.imgBox
+===========*/
 
-img{
+.imgBox {
+  text-align: center;
+  margin: 50px 0;
+}
+.imgBox img {
   max-width: 100%;
-  display: block;
+  height: auto;
+  vertical-align: top;
 }
 
-#contents{
-  max-width: 1000px;
+/*===========
+.txtBox
+===========*/
+
+.txtBox {
+  text-align: center;
+}
+.txtBox p {
+  font-size: 60px;
+  font-weight: bold;
+  padding: 2em 0;
+  margin: 0;
+}
+
+/*===========
+base
+===========*/
+
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: YuGothic, "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  letter-spacing: .025em;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.section {
+  max-width: 100%;
   margin: 0 auto;
+  padding: 20px 20px 500px;
+  overflow-x: hidden;
+}
+.section p._a {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 30px 0 0;
+}
+.section p._a .link {
+  display: inline-block;
+  color: #607D8B;
+  padding-left: 1.3em;
+  text-indent: -1.3em;
+}
+.section p._a .link:before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #607D8B;
+  border-right: 2px solid #607D8B;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-right: 10px;
 }
 
-.grid-item {
-  max-width: 100%;
-  width: 200px;
-  padding: 2px;
-}
-.grid-item--width2 {
-  width: 400px;
+
+.sec{
+  min-height: 1000px;/* コンテンツが少ないので最低でも1000pxの高さがあるように */
+  border: 5px solid #000;
+  position: relative;
+  overflow: hidden;/* はみ出たものは表示しない */
 }
 
-.grid-item--width3 {
-  width: 600px;
+
+/* 左上のタイトル */
+.item{
+  font-size: 45px;
+  font-weight: bold;
+  transition: 1s all;/* 値に変更があった場合１秒かけて変化する */
+  transition-delay: 0.2s;/* 少し遅らす(0.2秒) */
+  overflow: hidden;/* はみ出たものは表示しない */
+  width: 0;/* 幅を0にして表示しないように */
+  padding-left: 50px;
+}
+#item01.in{
+  width: 100%;
+  padding-left: 0;
+}
+
+#item02.in{
+  width: 100%;
+  padding-left: 100px;
+}
+
+#item03.in{
+  width: 100%;
+  padding-left: 200px;
+}
+
+
+/* 2番目のコンテンツに追加した画像の親の設定 */
+#person{
+  transition: 2s all;/* 値に変更があった場合2秒かけて変化する */
+  position: absolute;/* 親の.secに対して絶対的な位置になる */
+  bottom: 0;/* 一番下 */
+  right: 0;/* 一番右 */
+  transform: translate(100%,100%);/* 枠外に移動させておく */
+}
+
+#person.in{
+  transform: translate(0,0);/* 枠外から登場 */
+}
+
+
+/* 画像の設定 */
+#person img{
+  display: block;
+  animation: move 3s infinite;/* 3秒かけてmoveというアニメーションがずっと続く */
+}
+
+/* 以下moveアニメーション */
+@keyframes move{
+  0%{
+    transform: rotate(20deg);
+  }
+  50%{
+    transform: rotate(-20deg);
+  }
+  100%{
+    transform: rotate(20deg);
+  }
 }

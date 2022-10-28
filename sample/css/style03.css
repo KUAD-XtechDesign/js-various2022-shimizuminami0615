@@ -267,3 +267,10 @@ img[src="./images/IMG_0057.png"]
 {
   width: 700px;
 }
+.fadeIn {
+  opacity: 0;
+  transition: 2s;
+}
+.fadeIn.is-show {
+  opacity: 1;
+}

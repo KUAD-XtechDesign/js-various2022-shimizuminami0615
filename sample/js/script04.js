@@ -1,7 +1,13 @@
 $(function(){
-  $('.grid').masonry({
-    // options
-    itemSelector: '.grid-item',
-    columnWidth: 200
-  });
+  
+  $(".item").on("inview",function(){
+    $(this).addClass("in");
+  })
+
+  $("#person").on("inview",function(){
+    $(this).addClass("in");
+  })
+
+
+
 })

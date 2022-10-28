@@ -279,3 +279,12 @@ img[src="./images/IMG_0057.png"]
   opacity: 1;
 }
 
+h4{
+  font-size:1.2rem;
+ color: #ccc;
+}
+
+img[src="./images/Alicece.png"]
+{
+  width: 100px;
+}

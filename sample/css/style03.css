@@ -107,6 +107,7 @@ body.appear #container{
 
 h1{
   font-size:1.2rem;
+  color: rgb(191, 134, 28);
 }
 
 h2{
@@ -158,7 +159,7 @@ section:nth-child(2n){
   }
   /*画像の横幅を100%にしてレスポンシブ化*/
 img{
-  width: 100%;
+  width: 70%;
   height: auto;
   vertical-align: bottom;/*画像の下にできる余白を削除*/
 }

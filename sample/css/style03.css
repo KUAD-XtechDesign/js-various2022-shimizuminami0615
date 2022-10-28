@@ -159,7 +159,7 @@ section:nth-child(2n){
   }
   /*画像の横幅を100%にしてレスポンシブ化*/
 img{
-  width: 70%;
+  width: 65%;
   height: auto;
   vertical-align: bottom;/*画像の下にできる余白を削除*/
 }
@@ -168,6 +168,7 @@ img{
 
 .gallery{
   margin:0 0 5px 0;
+  width: 72%;
 }
 
 /*矢印の設定*/

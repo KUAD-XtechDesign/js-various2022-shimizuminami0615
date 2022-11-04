@@ -5,7 +5,7 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  background: rgb(120, 22, 22);
+  background: rgb(194, 36, 36);
   z-index: 9999999;
   text-align: center;
   color: rgb(218, 156, 57);
@@ -24,7 +24,7 @@
 /*画面遷移アニメーション*/
 
 body {
-  background: rgb(120, 22, 22); /*遷移アニメーションと同じ色を指定*/
+  background: rgb(194, 36, 36); /*遷移アニメーションと同じ色を指定*/
 }
 
 body.appear {
@@ -42,7 +42,7 @@ body.appear {
   content: "";
   position: fixed;
   transform: scale(100);
-  background-color: rgb(120, 22, 22); /*伸びる背景色の設定*/
+  background-color: rgb(194, 36, 36); /*伸びる背景色の設定*/
   z-index: 999;
   /*丸のスタートの形状*/
   top: calc(50% - 1rem); /*50%から円の半径を引いた値*/

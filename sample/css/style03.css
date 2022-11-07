@@ -154,7 +154,7 @@ h3 {
   border-top: solid 1px rgb(210, 145, 33);
   border-bottom: solid 1px rgb(210, 145, 33);
   margin-bottom: 30px;
-  font-family:'Courier New', Courier, monospace
+ 
 }
 /*画像の横幅を100%にしてレスポンシブ化*/
 img {
@@ -328,7 +328,7 @@ background-color: rgba(255, 255, 255, 0.947);
 li-2{
 
 padding-bottom: -1000px;
-padding-left: 165px;
+padding-left: 175px;
 background-color: rgba(0, 0, 0, 0.56);
 
 }

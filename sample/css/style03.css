@@ -148,12 +148,16 @@ section {
 }
 
 h3 {
-  font-size: 50px;
-  color: rgb(210, 145, 33);
+  font-size: 40px;
+  color: rgb(229, 198, 113);
   background-color: rgb(46, 46, 46);
-  border-top: solid 1px rgb(210, 145, 33);
-  border-bottom: solid 1px rgb(210, 145, 33);
+  border-top: solid 1px rgb(229, 198, 113);
+  border-bottom: solid 1px rgb(229, 198, 113);
   margin-bottom: 30px;
+  font-family: 'Caveat', cursive;
+  border-radius: 30px;
+  width: 300px;
+
  
 }
 /*画像の横幅を100%にしてレスポンシブ化*/
@@ -333,3 +337,5 @@ padding-left: 0px;
 
 
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');

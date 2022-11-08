@@ -211,7 +211,7 @@ img {
 .choice-btn li {
   cursor: pointer;
   outline: none;
-  background: #333;
+ 
   width: 25% !important;
 }
 

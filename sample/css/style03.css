@@ -171,7 +171,7 @@ img {
 
 .gallery {
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 /*矢印の設定*/
@@ -204,7 +204,8 @@ img {
 
 
 .slick-slide img{
-  width: 80%;
+  width: 100%;
+ 
 }
 /*選択するサムネイル画像の設定*/
 

@@ -1,157 +1,127 @@
-/*===========
-inview
-===========*/
-
-.fadeIn_right {
-  opacity: 0;
-  transform: translate(50%, 0);
-  transition: 2s;
-}
-.fadeIn_right.is-show {
-  transform: translate(0, 0);
-  opacity: 1;
-}
-
-/*===========
-.imgBox
-===========*/
-
-.imgBox {
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{height: 900px;}
+header {
+  background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
   text-align: center;
-  margin: 50px 0;
-}
-.imgBox img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  vertical-align: top;
-}
-
-/*===========
-.txtBox
-===========*/
-
-.txtBox {
-  text-align: center;
-}
-.txtBox p {
-  font-size: 60px;
-  font-weight: bold;
-  padding: 2em 0;
-  margin: 0;
-}
-
-/*===========
-base
-===========*/
-
-html {
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: YuGothic, "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  font-size: 16px;
-  letter-spacing: .025em;
-  line-height: 1.8;
-  margin: 0;
-  padding: 0;
-}
-* {
-  box-sizing: border-box;
-}
-.section {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 20px 20px 500px;
-  overflow-x: hidden;
-}
-.section p._a {
-  font-size: 12px;
-  font-weight: bold;
-  margin: 30px 0 0;
-}
-.section p._a .link {
-  display: inline-block;
-  color: #607D8B;
-  padding-left: 1.3em;
-  text-indent: -1.3em;
-}
-.section p._a .link:before {
-  content: '';
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  border-top: 2px solid #607D8B;
-  border-right: 2px solid #607D8B;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  margin-right: 10px;
-}
-
-
-.sec{
-  min-height: 1000px;/* コンテンツが少ないので最低でも1000pxの高さがあるように */
-  border: 5px solid #000;
+  background-size: cover;
+  background-attachment: fixed;
   position: relative;
-  overflow: hidden;/* はみ出たものは表示しない */
+  overflow: hidden;
+  border-radius: 0 0 85% 85% / 30%;
 }
-
-
-/* 左上のタイトル */
-.item{
-  font-size: 45px;
-  font-weight: bold;
-  transition: 1s all;/* 値に変更があった場合１秒かけて変化する */
-  transition-delay: 0.2s;/* 少し遅らす(0.2秒) */
-  overflow: hidden;/* はみ出たものは表示しない */
-  width: 0;/* 幅を0にして表示しないように */
-  padding-left: 50px;
-}
-#item01.in{
+header .overlay{
   width: 100%;
-  padding-left: 0;
+  height: 100%;
+  padding: 50px;
+  color: #FFF;
+  text-shadow: 1px 1px 1px rgb(0, 9, 11);
+  background-image: linear-gradient( 135deg, #ff6366 10%, #4258ff 100%);
+  
 }
 
-#item02.in{
-  width: 100%;
-  padding-left: 100px;
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  margin-bottom: 30px;
 }
 
-#item03.in{
-  width: 100%;
-  padding-left: 200px;
+h3, p {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 30px;
 }
 
-
-/* 2番目のコンテンツに追加した画像の親の設定 */
-#person{
-  transition: 2s all;/* 値に変更があった場合2秒かけて変化する */
-  position: absolute;/* 親の.secに対して絶対的な位置になる */
-  bottom: 0;/* 一番下 */
-  right: 0;/* 一番右 */
-  transform: translate(100%,100%);/* 枠外に移動させておく */
+button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  background: rgb(53, 117, 255);
+  margin-bottom: 50px;
+  box-shadow: 0 3px 20px 0 #ff3396;
 }
-
-#person.in{
-  transform: translate(0,0);/* 枠外から登場 */
+button:hover{
+  cursor: pointer;
 }
-
-
-/* 画像の設定 */
-#person img{
-  display: block;
-  animation: move 3s infinite;/* 3秒かけてmoveというアニメーションがずっと続く */
-}
-
-/* 以下moveアニメーション */
-@keyframes move{
-  0%{
-    transform: rotate(20deg);
+.gallery{
+  columns: 4;/*段組みの数*/
+  padding:0 15px;/*ギャラリー左右に余白をつける*/
   }
-  50%{
-    transform: rotate(-20deg);
+  
+  .gallery li {
+      margin-bottom: 20px;/*各画像下に余白をつける*/
   }
-  100%{
-    transform: rotate(20deg);
+  
+  /*ギャラリー内のイメージは横幅100%にする*/
+  .gallery img{
+    width:100%;
+    height:auto;
+    vertical-align: bottom;/*画像の下にできる余白を削除*/}
+  
+  /*　横幅900px以下の段組み設定　*/
+  @media only screen and (max-width: 900px) {
+    .gallery{
+    columns:3;
+    } 
   }
-}
+  
+  @media only screen and (max-width: 768px) {
+    .gallery{
+    columns: 2;
+    } 
+  }
+  
+  
+  /*========= レイアウトのためのCSS ===============*/
+  
+  ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  a{
+    color: #333;
+  }
+  
+  a:hover,
+  a:active{
+    text-decoration: none;
+  }
+  
+  h1{
+    text-align: center;
+    font-size:6vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin:30px 0;
+  }
+  
+  p{
+    margin:0 10px 10px 10px;
+    word-wrap : break-word;
+  }
+  
+  /*画像を出現させるアニメーションCSS*/
+  
+  .flipLeft{
+  animation-name: flipLeft;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  perspective-origin: left center;
+  opacity: 0;
+  }
+  
+  @keyframes flipLeft{
+    from {
+     transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+    opacity: 0;
+    }
+  
+    to {
+    transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+    opacity: 1;
+    }
+  }

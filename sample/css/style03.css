@@ -162,9 +162,10 @@ h3 {
 }
 /*画像の横幅を100%にしてレスポンシブ化*/
 img {
-  max-width: 100%;
+  max-width: 95%;
   height: auto;
   vertical-align: bottom; /*画像の下にできる余白を削除*/
+
 }
 
 /*メイン画像下に余白をつける*/

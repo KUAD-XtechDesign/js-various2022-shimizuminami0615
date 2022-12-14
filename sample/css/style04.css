@@ -1,33 +1,155 @@
-body{
-  background-color: #000;
-  color: #ccc;
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{height: 900px;
+background-color: rgb(255, 255, 255);}
+header {
+  background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay{
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  color: #FFF;
+  text-shadow: 1px 1px 1px rgb(0, 9, 11);
+  background-image: linear-gradient( 135deg, #ad3739 10%, #4258ff 100%);
+  
 }
 
-header{
-  background-color: #fff;
-  padding: 10px;
-  color: #333;
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  margin-bottom: 30px;
 }
 
-img{
-  max-width: 100%;
-  display: block;
+h3, p {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 30px;
 }
 
-#contents{
-  max-width: 1000px;
-  margin: 0 auto;
+button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  background: rgb(53, 117, 255);
+  margin-bottom: 50px;
+  box-shadow: 0 3px 20px 0 #ff3396;
 }
+button:hover{
+  cursor: pointer;
+}
+.gallery{
+  columns: 4;/*段組みの数*/
+  padding:0 15px;/*ギャラリー左右に余白をつける*/
+  background-color: rgb(255, 255, 255);
+  }
+  
+  .gallery li {
+      margin-bottom: 20px;/*各画像下に余白をつける*/
+  }
+  
+  /*ギャラリー内のイメージは横幅100%にする*/
+  .gallery img{
+    width:100%;
+    height:auto;
+    vertical-align: bottom;/*画像の下にできる余白を削除*/}
+  
+  /*　横幅900px以下の段組み設定　*/
+  @media only screen and (max-width: 900px) {
+    .gallery{
+    columns:3;
+    } 
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .gallery{
+    columns: 2;
+    } 
+  }
+  
+  
+  /*========= レイアウトのためのCSS ===============*/
+  
+  ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  a{
+    color: #333;
+  }
+  
+  a:hover,
+  a:active{
+    text-decoration: none;
+  }
+  
+  h1{
+    text-align: center;
+    font-size:6vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin:30px 0;
+  }
+  
+  p{
+    margin:0 10px 10px 10px;
+    word-wrap : break-word;
+  }
+  
+  /*画像を出現させるアニメーションCSS*/
+  
+  .flipLeft{
+  animation-name: flipLeft;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  perspective-origin: left center;
+  opacity: 0;
+  }
+  
+  @keyframes flipLeft{
+    from {
+     transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+    opacity: 0;
+    }
+  
+    to {
+    transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+    opacity: 1;
+    }
+  }
+h2{
+  font-family: 'Dancing Script', cursive;
+  font-size: 75px;
+ 
+  background-color: rgb(255, 255, 255);
+  }
 
-.grid-item {
-  max-width: 100%;
-  width: 200px;
-  padding: 2px;
-}
-.grid-item--width2 {
-  width: 400px;
-}
+  .flex {
+    display: flex; /*横並び*/
+    background-color: #8da8df;
+  }
+  .flex .image {
+    width: 640px; /*画像サイズ指定*/
+    margin: 0;
+    padding: 80px;
+    overflow: hidden;
+    position: relative;
+  }
+  .flex .text {
+    margin: 0 0 0 20px;
+    padding: 0;
+  }
 
-.grid-item--width3 {
-  width: 600px;
-}
+  h4{font-size:60px ;
+    font-family: 'Dancing Script', cursive;
+  background-color: #8da8df;}

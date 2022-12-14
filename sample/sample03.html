@@ -1,42 +1,84 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <title>shimizu_minami03</title>
+    <meta name="description"  content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-    <!-- 必要なライブラリをネット上から直接参照 CDN -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/filipelinhares/ress/master/dist/ress.min.css"/>
-    <!-- 自分のcss -->
+    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="./css/style03.css" />
-    <!-- 自分のjs -->
-    <script src="./js/script03.js"></script>
-    <title>sample03</title>
+    
   </head>
   <body>
-    <div class="wrapper">
-      
-      
-      <div id="clock">
-        <div class="hand" id="h_hand"></div>
-        <div class="hand" id="m_hand"></div>
-        <div class="hand" id="s_hand"></div>
-      </div>
-
-      <div id="form">
-        <div id="dig_time">00:00:00</div>
-        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
-        <div id="btn">記録</div>
-      </div>
-
-      <div id="record"></div>
-
-      <footer>
-        <div id="footer_h"></div>
-        <div id="footer_m"></div>
-        <div id="footer_s"></div>
-      </footer>
-
+    <div id="splash">
+      <div id="splash-logo">How do you get to Wonderland? </div>
     </div>
+  
+    <div class="splashbg"></div>
+    <!---画面遷移用-->
+ <header></header> 
+    <div id="container">
+      <header class="header-1">
+        <div class="header-inner">
+         <h6>GAME CONCEPT</h6>
+        </div>
+      </header>
+      <header id="header">
+        <div id="logo"><img src="./images/logo1.png" width="280px" alt="logo"></div>
+   
+      </header>
+      <br><br><br><br><br> <br><br><br><br><br> <br><br><br>
+      <header class="header-2">
+        <div class="header-inner">
+      <center> <li-2><img src="images/lololo.png" width="60%"></li-2>
+        </div>
+        <br><br><br> <br><br><br><br> <br><br><br><br><br> <br><br><br>
+      <main>
+        <section class="content_sec">
+         <center><h3>character</h3></center>
+          <div class="each_content">
+            <br><br>
+            <div class="inview_re"> <img src="./images/聞ききき.png" alt=""> </div>
+            <div class="inview_re"> <img src="./images/000022.png " alt=""></div>
+            <div class="inview_re"> <img src="./images/kokoko.png" alt=""></div>
+            <div class="inview_re"> <img src="./images/" alt=""></div>
+          </div>
+  
+          <center><h3>gallery</h3></center>
+          <div class="each_content">
+          <center>  <ul class="gallery">
+            <li><img src="images/いらすと7.png" alt=""></li>
+            <li><img src="images/kon1.png" alt=""></li>
+              <li><img src="images/namae.png" ></li>
+              
+              <li><img src="images/map.png" alt=""></li>
+            </ul></center> 
+            <ul class="choice-btn">
+              <li><img src="images/いらすと7.png" alt=""></li>
+              <li><img src="images/kon1.png" alt=""></li>
+              <li><img src="images/namae.png" alt=""></li>
+            
+              <li><img src="images/map.png" alt=""></li>
+            </ul>
+          </div>
+  
+        </section>
+      </main>
+  
+      <footer id="footer">
+        <a href="https://kuad-xtechdesign.github.io/js-various2022-shimizuminami0615/sample/sample04.html"> <small>&copy; shimizu_minami.</small></a>
+      </footer>
+  
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/script03.js"></script>
   </body>
 </html>
